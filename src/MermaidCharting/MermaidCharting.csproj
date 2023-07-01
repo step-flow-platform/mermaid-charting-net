@@ -5,6 +5,14 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
+
+        <AssemblyTitle>Mermaid Charting</AssemblyTitle>
+        <AssemblyName>MermaidCharting</AssemblyName>
+        <PackageId>MermaidCharting</PackageId>
+        <PackageTags>mermaid;diagram;flowchart;graph;.NET;Core</PackageTags>
+        <Version>0.0.1</Version>
+        <Authors>Mikhail Doshevsky</Authors>
+        <Description>.NET lib for generate Mermaid diagrams and charts</Description>
     </PropertyGroup>
 
 </Project>

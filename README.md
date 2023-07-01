@@ -1,4 +1,4 @@
-# mermaid-charting-net
+# Mermaid Charting
 .NET lib for generate Mermaid diagrams and charts
 
 ## Example
