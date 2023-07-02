@@ -10,7 +10,7 @@ public class FlowchartModel
 
     public FlowchartDirection Direction { get; set; }
 
-    public List<NodeModel> Nodes { get; }
+    public List<NodeModel> Nodes { get; set; }
 
-    public List<LinkModel> Links { get; }
+    public List<LinkModel> Links { get; set; }
 }
