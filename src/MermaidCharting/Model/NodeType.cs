@@ -1,4 +1,4 @@
-namespace MermaidCharting;
+namespace MermaidCharting.Model;
 
 public enum NodeType
 {

@@ -4,7 +4,7 @@
 ## Example
 
 ```csharp
-string flowchart = new FlowchartBuilder()
+FlowchartModel model = new FlowchartBuilder()
     .SetDirection(FlowchartDirection.LeftToRight)
     .AddNode(new NodeModel("1", "Default node"))
     .AddNode(new NodeModel("2", "Rhombus node", NodeType.Rhombus))
@@ -17,6 +17,8 @@ string flowchart = new FlowchartBuilder()
     .AddLink(new LinkModel("3", "5"))
     .AddLink(new LinkModel("4", "5"))
     .Build();
+
+string mermaidFlowchart = MermaidRenderer.RenderFlowchart(model);
 ```
 
 ### Result

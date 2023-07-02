@@ -1,4 +1,4 @@
-namespace MermaidCharting;
+namespace MermaidCharting.Model;
 
 public class FlowchartModel
 {
@@ -7,6 +7,8 @@ public class FlowchartModel
         Nodes = new List<NodeModel>();
         Links = new List<LinkModel>();
     }
+
+    public FlowchartDirection Direction { get; set; }
 
     public List<NodeModel> Nodes { get; }
 

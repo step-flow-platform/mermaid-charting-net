@@ -1,12 +1,14 @@
+using MermaidCharting.Model;
+
 namespace MermaidCharting.Tests;
 
 [TestClass]
-public class FlowchartBuilderTest
+public class FlowchartRenderTest
 {
     [TestMethod]
-    public void BuildBasicFlowchart()
+    public void RenderBasicFlowchart()
     {
-        string flowchart = new FlowchartBuilder()
+        FlowchartModel model = new FlowchartBuilder()
             .SetDirection(FlowchartDirection.LeftToRight)
             .AddNode(new NodeModel("1", "Default node"))
             .AddNode(new NodeModel("2", "Rhombus node", NodeType.Rhombus))
@@ -20,6 +22,7 @@ public class FlowchartBuilderTest
             .AddLink(new LinkModel("4", "5"))
             .Build();
 
-        Assert.IsFalse(string.IsNullOrEmpty(flowchart));
+        string mermaidFlowchart = MermaidRenderer.RenderFlowchart(model);
+        Assert.IsFalse(string.IsNullOrEmpty(mermaidFlowchart));
     }
 }
