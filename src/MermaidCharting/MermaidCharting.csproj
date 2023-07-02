@@ -10,7 +10,7 @@
         <AssemblyName>MermaidCharting</AssemblyName>
         <PackageId>MermaidCharting</PackageId>
         <PackageTags>mermaid;diagram;flowchart;graph;.NET;Core</PackageTags>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
         <Authors>Mikhail Doshevsky</Authors>
         <Description>.NET lib for generate Mermaid diagrams and charts</Description>
     </PropertyGroup>
